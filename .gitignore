@@ -1,0 +1,42 @@
+# WordPress Core
+wp-admin/
+wp-includes/
+index.php
+license.txt
+readme.html
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+
+# Sensitive Configuration File - DO NOT COMMIT
+wp-config.php
+
+# User-generated content and logs
+wp-content/uploads/
+wp-content/blogs.dir/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/cache/
+*.log
+debug.log
+
+# Third-party plugins and themes (if not managed by Composer)
+# wp-content/plugins/
+# wp-content/themes/
+
+# Build tools and dependencies
+node_modules/
+vendor/
+.DS_Store
+Thumbs.db
+.sass-cache/

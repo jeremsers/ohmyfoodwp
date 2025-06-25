@@ -1,0 +1,15 @@
+/*
+Theme Name: Oh My Food
+Description: Child theme for twentytwentyone. You can now safely customize it and not risk losing your customizations.
+Author: Eric - Oh My Food
+Author URI: https://oh-my-food.fr
+Template: twentytwentyone
+Version: 1.0
+*/
+
+
+/* Newsletter */
+
+.newsletter-box {
+    display: none; /* Cache newsletter box */
+}
