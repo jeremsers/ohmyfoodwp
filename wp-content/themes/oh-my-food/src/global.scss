@@ -1,0 +1,28 @@
+body {
+    font-family: "Inter", sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Outfit", sans-serif;
+}
+
+.site-main {
+    padding: 0;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    color: $red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    &::after {
+        content: "";
+        display: block;
+        width: 130px;
+        height: 3px;
+        background-color: $gold;
+    }
+}

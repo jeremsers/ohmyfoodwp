@@ -13,27 +13,34 @@
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?> <?php twentytwentyone_the_html_classes(); // Ajoute des classes personnalisées au <html> ?>>
+
 <head>
 	<!-- Définit l'encodage du site selon la configuration WordPress -->
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta charset="<?php bloginfo('charset'); ?>" />
 
 	<!-- Configure le viewport pour un rendu adapté aux appareils mobiles -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+	href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Petit+Formal+Script&display=swap"
+	rel="stylesheet">
+	<script src="https://kit.fontawesome.com/0c858b05b7.js" crossorigin="anonymous"></script>
+	
 	<!-- Permet aux plugins et au thème d'insérer des éléments dans le <head> (styles, scripts, etc.) -->
-	<?php wp_head(); ?>
+		<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); // Ajoute dynamiquement des classes CSS au <body> ?>>
 
 	<?php wp_body_open(); // Hook permettant d'insérer du contenu dès l'ouverture du <body> (ex: messages d'accessibilité) ?>
-	
+
 	<div id="page" class="site">
 		<!-- Lien pour les utilisateurs de lecteurs d'écran ou au clavier afin de passer directement au contenu -->
 		<a class="skip-link screen-reader-text" href="#content">
 			<?php
 			/* Texte traduisible pour l'accessibilité */
-			esc_html_e( 'Skip to content', 'twentytwentyone' );
+			esc_html_e('Skip to content', 'twentytwentyone');
 			?>
 		</a>
 
@@ -42,8 +49,7 @@
 			Ce fichier contient le code qui appelle les fonctions WordPress pour afficher le menu de navigation et le logo du header.
 			Le menu est le logo est modifiable dans l'administration de WordPress, dans personalisez > identité du site.
 		-->
-		<?php get_template_part( 'template-parts/header/site-header' ); ?>
-
+		<?php get_template_part('template-parts/header/site-header'); ?>
 		<!-- Conteneur principal du contenu du site -->
 		<div id="content" class="site-content">
 			<div id="primary" class="content-area">

@@ -1,0 +1,244 @@
+.hero {
+	height: 90vh;
+	position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+	& img {
+		position: absolute;
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		background-color: rgba(0, 0, 0, 0.65);
+	}
+}
+.container {
+	position: relative;
+	z-index: 1;
+	color: $bg-light;
+	text-align: center;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	gap: 150px;
+    width: 50%;
+	h1 {
+		font-size: 64px;
+		font-weight: 700;
+		line-height: 70px;
+	}
+	p {
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 29px;
+	}
+	.search-container {
+		display: flex;
+		flex-direction: row;
+		background-color: $bg-light;
+		border-radius: 10px;
+		padding: 5px 10px;
+		width: 100%;
+        gap: 10px;
+        input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            border-style: none;
+            background-color: $bg-light;
+        }
+        .search-button {
+            width: 20%;
+            border-radius: 5px;
+            border: none;
+            border-style: none;
+            background-color: $blue !important;
+            color: $bg-light !important;
+            transition: transform 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.05);
+                transition: transform 0.3s ease-in-out;
+            }
+        }
+	}
+}
+.restaurants {
+    background-color: $rosegold;
+    padding: 100px 0;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    .restaurant-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 150px;
+    }
+    .restaurant-card {
+        width: 400px;
+        height: 550px;
+        background-color: $bg-light;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 0 4px 10px 0 rgba(38, 38, 38, 0.5);
+        & img {
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        .restaurant-card-link {
+            text-decoration: none;
+        }
+        .restaurant-card-content {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 15px;
+            align-items: center;
+            justify-items: center;
+            padding: 0 30px;
+            height: 50%;
+        }
+        .restaurant-card-title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            color: $blue;
+            width: 100%;
+            h3 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 29px;
+            }
+            p { 
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 19px;
+                text-decoration: underline;
+            }
+        }
+        .restaurant-card-description {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19px;
+            color: $text-black;
+        }
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out ;
+        }
+        button {
+            border-radius: 5px;
+            border: none;
+            border-style: none;
+            background-color: $blue;
+            color: $bg-light;
+            height: 50px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.05);
+                transition: transform 0.3s ease-in-out;
+            }
+            &:not(:hover) {
+                background-color: $blue;
+                color: $bg-light;
+            }
+        }
+    }
+    .restaurants-button {
+        border-radius: 5px;
+        border: none;
+        border-style: none;
+        background-color: $blue !important;
+        color: $bg-light !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0 4px 10px 0 rgba(38, 38, 38, 0.5);
+        &:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        &:not(:hover) {
+            background-color: $blue;
+            color: $bg-light;
+        }
+    }
+}
+.confiance {
+    background-color: $bg-light;
+    padding: 50px 0;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0;
+    .confiance-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 200px;
+    }
+    .confiance-card {
+        width: 350px;
+        height: auto;
+        background-color: $bg-light;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 30px;
+        text-align: justify;
+        & img {
+            width: 240px;
+            height: 240px;
+            object-fit: contain;
+            transition: transform 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.05);
+                transition: transform 0.3s ease-in-out;
+            }
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29px;
+            color: $blue;
+            height: 70px;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            height: 150px;
+        }
+    }
+}

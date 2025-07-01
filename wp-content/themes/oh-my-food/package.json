@@ -1,0 +1,17 @@
+{
+  "name": "oh-my-food",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.89.2",
+    "sass-embedded": "^1.89.2",
+    "vite": "^7.0.0"
+  }
+}
