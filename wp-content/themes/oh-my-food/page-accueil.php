@@ -11,6 +11,6 @@ get_header();
 <?php get_template_part('template-parts/home/hero'); ?>
 <?php get_template_part('template-parts/home/restaurants'); ?>
 <?php get_template_part('template-parts/home/confiance'); ?>
-
+<?php get_template_part('template-parts/home/popup'); ?>
 <?php
 get_footer();

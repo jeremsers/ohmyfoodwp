@@ -1,6 +1,6 @@
 <section class="equipe">
     <h2 class="section-title">Notre équipe</h2>
-    <p class="equipe-description">Notre équipe est composée de passionnés de gastronomie qui partagent une vision
+    <p class="equipe-section-description">Notre équipe est composée de passionnés de gastronomie qui partagent une vision
         commune : offrir aux utilisateurs une expérience culinaire inoubliable. Chaque membre de l'équipe a contribué à
         la création d'Ohmyfood, un projet qui reflète notre amour pour la gastronomie et notre désir de partager cette
         passion avec tous ceux qui souhaitent découvrir des tables d'exception.</p>

@@ -5,7 +5,15 @@
                 src="http://ohmyfood.local/wp-content/uploads/2025/06/cropped-Ohmyfood__8_-removebg-preview.png">
         </a>
     </div>
-    <nav>
+
+    <!-- Burger menu button -->
+    <button class="burger-menu" aria-label="Toggle menu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+    </button>
+
+    <nav class="nav-menu">
         <ul class="nav-container">
             <?php
             $nav_menu = get_nav_menu();

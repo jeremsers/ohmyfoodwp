@@ -3,8 +3,9 @@
         width="1440" height="900">
     <div class="container-hero-restaurant">
         <h1 class="hero-restaurant-title">Le palais du goût</h1>
-        <button class="restaurant-hero-button">Réserver une table</button>
+        <button class="restaurant-hero-button restaurant-button">Réserver une table</button>
     </div>
+    <?php get_template_part('template-parts/restaurant/tabs'); ?>
 
 
 </section>

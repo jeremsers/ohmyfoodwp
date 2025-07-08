@@ -2,14 +2,15 @@
     <h2 class="section-title">Témoignages</h2>
     <div class="temoignages-container">
         <div class="chevron-container">
-            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-left fa-desktop-only"></i>
+            <i class="fas fa-chevron-up fa-mobile-only"></i>
         </div>
         <div class="temoignages-card">
 
-            <p class="temoignages-card-text">“La cuisine du Chef Auguste Leroy est une véritable déclaration d'amour au
+            <p class="temoignages-card-text">La cuisine du Chef Auguste Leroy est une véritable déclaration d'amour au
                 patrimoine français. Chaque plat est un équilibre parfait entre le respect absolu du produit et une
                 créativité d'une justesse rare. 'Le Palais du Goût' n'est pas seulement un restaurant, c'est une
-                destination qui incarne l'excellence et la passion que nous cherchons à partager sur Ohmyfood.”
+                destination qui incarne l'excellence et la passion que nous cherchons à partager sur Ohmyfood.
             </p>
             <div class="temoignages-card-rating">
                 <i class="fas fa-star"></i>
@@ -27,10 +28,10 @@
         </div>
         <div class="temoignages-card">
 
-            <p class="temoignages-card-text">“ Nous avons célébré notre anniversaire de mariage au Palais du Goût et la
+            <p class="temoignages-card-text"> Nous avons célébré notre anniversaire de mariage au Palais du Goût et la
                 soirée fut au-delà de toutes nos espérances. Le cadre est tout simplement magique, le service d'une
                 attention rare, et chaque plat était un délice pour les yeux comme pour les papilles. Un immense merci à
-                toute l'équipe pour avoir rendu ce moment si précieux et inoubliable. ”</p>
+                toute l'équipe pour avoir rendu ce moment si précieux et inoubliable.</p>
             <div class="temoignages-card-rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -46,7 +47,8 @@
 
         </div>
         <div class="chevron-container">
-            <i class="fas fa-chevron-right"></i>
+            <i class="fas fa-chevron-right fa-desktop-only"></i>
+            <i class="fas fa-chevron-down fa-mobile-only"></i>
         </div>
     </div>
     <div class="temoignages-button">

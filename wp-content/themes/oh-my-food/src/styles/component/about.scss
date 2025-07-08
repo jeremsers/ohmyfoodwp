@@ -1,10 +1,10 @@
 .hero-about {
 	height: 90vh;
 	position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0px;
 	& img {
 		position: absolute;
 		object-fit: cover;
@@ -21,37 +21,36 @@
 		z-index: 1;
 		background-color: rgba(0, 0, 0, 0.65);
 	}
-    .container-about {
-        position: relative;
-        z-index: 1;
-        color: $bg-light;
-        text-align: center;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        gap: 150px;
-        width: 50%;
-        h1 {
-            font-size: 64px;
-            font-weight: 700;
-            line-height: 70px;
-        }
-    }
+	.container-about {
+		position: relative;
+		z-index: 1;
+		color: $bg-light;
+		text-align: center;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		gap: 150px;
+		width: 50%;
+		h1 {
+			font-size: clamp(32px, 5vw, 64px);
+			font-weight: 700;
+			line-height: 70px;
+		}
+	}
 }
-
 
 .concept {
 	background-color: $rosegold;
-	padding: 100px 0;
+	padding: clamp(30px, 5vw, 100px) 0;
 	margin: 0px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 50px;
-    box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.25);
 	.container {
 		width: 100%;
 	}
@@ -59,26 +58,26 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		gap: 250px;
+		gap: clamp(30px, 5vw, 250px);
 		width: 100%;
-		padding: 0 250px;
+		padding: 0 clamp(30px, 5vw, 250px);
 		justify-content: space-between;
 	}
 	.concept-image {
 		width: 40%;
-		height: 480px;
+		height: clamp(300px, 50vw, 480px);
 		object-fit: cover;
 		flex-shrink: 0;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px 0 rgba(38, 38, 38, 0.5);
-        transition: transform 0.3s ease-in-out;
-        &:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease-in-out;
-        }
+		border-radius: 10px;
+		box-shadow: 0 4px 10px 0 rgba(38, 38, 38, 0.5);
+		transition: transform 0.3s ease-in-out;
+		&:hover {
+			transform: scale(1.05);
+			transition: transform 0.3s ease-in-out;
+		}
 	}
 	.concept-text-container {
-		width: 50%;
+		width: 100%;
 		font-weight: 400;
 		text-align: justify;
 		display: flex;
@@ -92,21 +91,23 @@
 }
 .selection {
 	background-color: $bg-light;
-	padding: 100px 0;
+	padding: clamp(30px, 5vw, 100px) 0;
 	margin: 0px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 50px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 	.selection-container {
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: row;
 		align-items: center;
-		gap: 150px;
+		justify-content: center;
+		gap: clamp(30px, 5vw, 150px);
 	}
 	.selection-card {
-		width: 350px;
+		width: clamp(300px, 50vw, 350px);
 		height: auto;
 		background-color: $bg-light;
 		border-radius: 10px;
@@ -115,7 +116,7 @@
 		gap: 40px;
 		align-items: center;
 		justify-content: center;
-		padding: 0 30px;
+		padding: 0;
 		text-align: justify;
 		& img {
 			width: 240px;
@@ -152,8 +153,8 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 50px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-	.equipe-description {
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+	.equipe-section-description {
 		width: 50%;
 		text-align: justify;
 		font-size: 18px;
@@ -163,9 +164,12 @@
 	}
 	.equipe-container {
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: row;
 		align-items: center;
+		justify-content: center;
 		gap: 150px;
+		width: 100%;
 	}
 	.equipe-card {
 		width: 250px;
@@ -223,10 +227,10 @@
 .cta {
 	height: 70vh;
 	position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0px;
 	& img {
 		position: absolute;
 		object-fit: cover;
@@ -243,37 +247,109 @@
 		z-index: 1;
 		background-color: rgba(0, 0, 0, 0.65);
 	}
-    .cta-container {
-        position: relative;
-        z-index: 1;
-        color: $bg-light;
-        text-align: center;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        gap: 150px;
-        width: 50%;
-        .cta-title {
-            font-size: 64px;
-            font-weight: 700;
-            line-height: 70px;
-        }
-        .cta-button {
-            height: 70px;
-            width: 420px;
-            background-color: $blue !important;
-            color: $bg-light !important;
-            padding: 10px 20px;
-            border-radius: 10px;
-            border: 1px solid $bg-light;
-            transition: transform 0.3s ease-in-out;
-            &:hover {
-                transform: scale(1.05);
-                transition: transform 0.3s ease-in-out;
-            }
-        }
-    }
+	.cta-container {
+		position: relative;
+		z-index: 1;
+		color: $bg-light;
+		text-align: center;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		gap: clamp(30px, 5vw, 150px);
+		width: 50%;
+		.cta-title {
+			font-size: clamp(32px, 5vw, 64px);
+			font-weight: 700;
+			line-height: 70px;
+		}
+		.cta-button {
+			height: clamp(50px, 5vw, 70px);
+			width: clamp(300px, 50vw, 420px);
+			background-color: $blue !important;
+			color: $bg-light !important;
+			font-size: clamp(16px, 2vw, 24px);
+			padding: 10px 20px;
+			border-radius: 10px;
+			border: 1px solid $bg-light;
+			transition: transform 0.3s ease-in-out;
+			&:hover {
+				transform: scale(1.05);
+				transition: transform 0.3s ease-in-out;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.hero-about {
+		height: 50vh;
+	}
+	.concept {
+		.concept-container {
+			flex-direction: column;
+			gap: clamp(30px, 5vw, 100px);
+		}
+		.concept-image {
+			width: 100%;
+			height: clamp(200px, 50vw, 300px);
+		}
+		.concept-text-container {
+			width: 100%;
+		}
+	}
+	.selection {
+		.selection-container {
+			flex-direction: column;
+			gap: clamp(30px, 5vw, 100px);
+		}
+		.selection-card {
+			img {
+				width: 150px;
+				height: 150px;
+			}
+			h3 {
+				font-size: 20px;
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+	}
+	.equipe {
+		.equipe-container {
+			flex-direction: column;
+			gap: clamp(30px, 5vw, 100px);
+		}
+		.equipe-section-description {
+			width: 100%;
+			font-size: 16px;
+			padding: 0 clamp(30px, 5vw, 100px);
+		}
+		.equipe-card {
+			width: 80%;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+			.equipe-text-container {
+				.equipe-name {
+					font-size: 20px;
+				}
+				.equipe-role {
+					font-size: 16px;
+				}
+				.equipe-description {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	.cta {
+		.cta-container {
+			width: 100%;
+		}
+	}
 }

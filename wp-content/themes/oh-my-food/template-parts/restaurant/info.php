@@ -41,8 +41,7 @@
                 <div class="code-vestimentaire-text">
                     <h3 class="list-title">Code vestimentaire</h3>
                     <ul class="list-content">
-                        <li class="list-item">Le code vestimentaire est obligatoire. Vous pouvez trouver des vêtements
-                            adaptés à la température à l'accueil.</li>
+                        <li class="list-item">Tenue de ville élégante souhaitée.</li>
                     </ul>
                 </div>
             </div>

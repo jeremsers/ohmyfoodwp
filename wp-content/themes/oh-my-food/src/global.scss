@@ -9,19 +9,25 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0;
 }
 
+a {
+    &:focus {
+        background-color: transparent !important;
+    }
+}
+
 .section-title {
-    font-size: 48px;
+    font-size: clamp(24px, 4vw, 48px);
     font-weight: 700;
     line-height: 58px;
     color: $red;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: clamp(15px, 3vw, 30px);
     &::after {
         content: "";
         display: block;
-        width: 130px;
+        width: clamp(65px, 13vw, 130px);
         height: 3px;
         background-color: $gold;
     }
