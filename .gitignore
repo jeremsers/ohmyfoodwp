@@ -27,19 +27,12 @@ wp-content/blogs.dir/
 wp-content/upgrade/
 wp-content/backup-db/
 wp-content/cache/
-wp-content/languages/
-wp-content/plugins/
-wp-content/a1wm-backups/
 *.log
 debug.log
 
-#Third-party plugins and themes (if not managed by Composer)
+# Third-party plugins and themes (if not managed by Composer)
 # wp-content/plugins/
-wp-content/themes/twentytwentyone/
-wp-content/themes/twentytwentythree/
-wp-content/themes/twentytwentyfour/
-wp-content/themes/twentytwentyfive/
-
+# wp-content/themes/
 
 # Build tools and dependencies
 node_modules/
